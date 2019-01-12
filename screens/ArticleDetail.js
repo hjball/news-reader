@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import { WebBrowser } from 'expo';
-import moment from 'moment'
+import moment from 'moment';
 
 class ArticleDetail extends Component {
 	static navigationOptions = ({ navigation }) => ({

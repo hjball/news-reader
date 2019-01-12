@@ -3,8 +3,7 @@ import { StyleSheet, View, Text, TouchableOpacity, FlatList, ActivityIndicator }
 import moment from 'moment';
 import { Ionicons } from '@expo/vector-icons';
 import { Platform } from 'react-native';
-
-// {import News from '../data/news.json';}
+import News from '../data/news.json';
 
 const isIOS = Platform.OS === 'ios';
 const isAndroid = Platform.OS === 'android';
@@ -22,6 +21,8 @@ class ListScreen extends Component {
     		articles: [],
     		isLoading: false,
     	}
+
+      console.log(this.state.articles);
 
     	this.onPressDetails = this.onPressDetails.bind(this);
     	this.renderItem = this.renderItem.bind(this);
